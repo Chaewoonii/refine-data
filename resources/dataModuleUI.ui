@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>947</width>
+    <height>772</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QDialog{
+	background-color: #fff;
+}
+
+QPushButton{
+	min-height: 30px;
+	font: 11pt &quot;한컴 고딕&quot;;
+	border-radius: 15px;
+	background-color: #090909;
+	color: #fff;
+}
+
+QPushButton:hover{
+	background-color: #fff;
+	color: #090909;
+	border: 1px solid #090909;
+}
+QLabel{
+	
+	font: 11pt &quot;한컴 고딕&quot;;
+}
+
+#openFileBtn{
+	font-size: 15pt;
+}
+/*
+#openFileBtn{
+	color: #090909;
+	background-color: #fff;
+	border: 1px solid #090909;
+	border-radius: 40px;
+	font-size: 20pt;
+}
+
+#openFileBtn:hover{
+	background-color: #090909;
+	color: #fff;
+
+}*/</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout_3">
+   <item row="5" column="0" colspan="4">
+    <layout class="QGridLayout" name="gridLayout">
+     <item row="1" column="0">
+      <widget class="QTableView" name="tableView"/>
+     </item>
+    </layout>
+   </item>
+   <item row="6" column="2">
+    <widget class="QPushButton" name="cancelBtn">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;취소&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Cancel</string>
+     </property>
+    </widget>
+   </item>
+   <item row="6" column="1">
+    <widget class="QPushButton" name="saveBtn">
+     <property name="toolTip">
+      <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;저장&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+     </property>
+     <property name="text">
+      <string>Save</string>
+     </property>
+    </widget>
+   </item>
+   <item row="4" column="1" colspan="3">
+    <layout class="QGridLayout" name="gridLayout_2">
+     <item row="3" column="4">
+      <widget class="QPushButton" name="delSpCharBtn">
+       <property name="text">
+        <string>특수문자제거</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="1">
+      <widget class="QPushButton" name="setColNameBtn">
+       <property name="text">
+        <string>속성명 변경</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="1">
+      <widget class="QPushButton" name="extractDataBtn">
+       <property name="text">
+        <string>조건 추출</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="5">
+      <widget class="QPushButton" name="setAddressBtn">
+       <property name="text">
+        <string>주소 정제</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="4">
+      <widget class="QPushButton" name="delColBtn">
+       <property name="text">
+        <string>속성삭제</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="4">
+      <widget class="QPushButton" name="addCharBtn">
+       <property name="text">
+        <string>데이터 붙이기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="5">
+      <widget class="QPushButton" name="delCharBtn">
+       <property name="text">
+        <string>데이터 자르기</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="3">
+      <widget class="QPushButton" name="setPhoneNumBtn">
+       <property name="text">
+        <string>전화번호 정제</string>
+       </property>
+      </widget>
+     </item>
+     <item row="4" column="3">
+      <widget class="QPushButton" name="changeUnitBtn">
+       <property name="text">
+        <string>단위 변환</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="1">
+      <widget class="QPushButton" name="setNameBtn">
+       <property name="text">
+        <string>비식별화</string>
+       </property>
+      </widget>
+     </item>
+     <item row="3" column="5">
+      <widget class="QPushButton" name="setDateBtn">
+       <property name="text">
+        <string>날짜 정제</string>
+       </property>
+      </widget>
+     </item>
+     <item row="1" column="3">
+      <widget class="QPushButton" name="addColBtn">
+       <property name="text">
+        <string>속성추가</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <layout class="QVBoxLayout" name="verticalLayout_2">
+     <item>
+      <widget class="QPushButton" name="openFileBtn">
+       <property name="toolTip">
+        <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;파일 열기&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">min-height: 80px;
+max-width: 250px;
+
+</string>
+       </property>
+       <property name="text">
+        <string>Open File</string>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="fileNameLabel">
+       <property name="text">
+        <string>File Name</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
